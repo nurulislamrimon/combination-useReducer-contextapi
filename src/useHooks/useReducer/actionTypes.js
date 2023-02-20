@@ -2,5 +2,6 @@ export const actiontypes = {
     loading: "loading",
     posts: "posts",
     error: "error",
-    check: "check"
+    check: "check",
+    removeCheck: "removeCheck"
 }

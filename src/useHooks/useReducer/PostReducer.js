@@ -35,6 +35,12 @@ export const productReducer = (state, action) => {
                 error: false,
                 check: [...state.check, action.payload.datas]
             }
+        case actiontypes.removeCheck:
+
+            return {
+                ...state,
+                check: [...state.check?.filter(ck => ck !== action.payload.datas)]
+            }
         default:
             return state;
     }
